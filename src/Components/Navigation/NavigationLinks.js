@@ -6,6 +6,7 @@ const NavigationLinks = ({ linkContext }) => {
         return (
             <NavigationItem title={item.title}
                 link={item.link}
+                isCurrentPage={item.isCurrentPage}
                 key={item.title}
             />
         )
