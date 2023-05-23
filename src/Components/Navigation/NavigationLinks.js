@@ -1,13 +1,13 @@
 import NavigationItem from './NavigationItem';
 
-const NavigationLinks = ({navbarContext = []}) => {
-    const links = navbarContext.map(item => { 
+const NavigationLinks = ({ linkContext }) => {
+    const links = linkContext.map(item => {
 
         return (
             <NavigationItem title={item.title}
-                            link={item.link}
-                            key={item.title}
-                            />
+                link={item.link}
+                key={item.title}
+            />
         )
     })
 
