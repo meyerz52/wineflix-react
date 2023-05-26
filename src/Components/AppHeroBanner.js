@@ -1,4 +1,4 @@
-import ActionButtonCollection from "../ActionButtonCollection"
+import ActionButtonCollection from "./Hero/ActionButtonCollection"
 
 const AppHeroBanner = ({ imageUrl, title, subtitle, description, controls = [] }) => {
     const header = <h3>{subtitle}</h3>

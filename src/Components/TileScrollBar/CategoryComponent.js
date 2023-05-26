@@ -1,7 +1,13 @@
 import WineCard from "./WineCard";
 
 const CategoryComponent = ({ categoryName, categoryContext }) => {
-    const tiles = categoryContext.map((item) => < WineCard {...item} />);
+    const tiles = categoryContext.map(({ id, imageUrl, label, isNew, isFinished, progress }) => {
+        return (
+            <li key={id}>
+                < WineCard imageUrl={imageUrl} label={label} isNew={isNew} isFinished={isFinished}
+                    progress={progress} />
+            </li>)
+    });
 
     return (
         <section className="category">

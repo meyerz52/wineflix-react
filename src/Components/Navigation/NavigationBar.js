@@ -1,5 +1,5 @@
 import NavigationLinks from "./NavigationLinks";
-import Avatar from "./Avatar";
+import AvatarComponent from "./AvatarComponent";
 
 const NavigationBar = ({ avatar = "?", links = [] }) => {
     return (
@@ -9,7 +9,7 @@ const NavigationBar = ({ avatar = "?", links = [] }) => {
                 <NavigationLinks linkContext={links} />
             </section>
             <section className="secondary-navigation">
-                <Avatar Icon={avatar} />
+                <AvatarComponent Icon={avatar} />
             </section>
         </nav>
     )

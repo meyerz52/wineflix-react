@@ -1,18 +1,19 @@
 import NavigationItem from './NavigationItem';
 
 const NavigationLinks = ({ linkContext }) => {
-    const links = linkContext.map(item => {
+    const links = linkContext.map(({ title, link, isCurrentPage }) => {
 
         return (
-            <NavigationItem title={item.title}
-                link={item.link}
-                isCurrentPage={item.isCurrentPage}
-                key={item.title}
-            />
+            <li key={title} className={isCurrentPage ? "active" : null}>
+                <NavigationItem title={title}
+                    link={link}
+                />
+            </li>
+
         )
     })
 
     return <ul className="navigation-links">{links}</ul>
 }
 
-export default NavigationLinks 
+export default NavigationLinks

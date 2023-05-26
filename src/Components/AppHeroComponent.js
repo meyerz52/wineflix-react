@@ -1,5 +1,5 @@
-import HeroImage from "../HeroImage";
-import NavigationBar from "../Navigation/NavigationBar";
+import HeroImage from "./Hero/HeroImage";
+import NavigationBar from "./Navigation/NavigationBar";
 import AppHeroBanner from "./AppHeroBanner";
 
 const AppHeroComponent = ({ heroImageContext, navigationContext, heroContent, heroButtonContext }) => {

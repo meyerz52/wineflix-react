@@ -1,6 +1,6 @@
 import "./App.css";
 import { navigationContext, heroContent, heroButtonContext, heroImageContext, wines } from "./data";
-import AppHeroComponent from "./Components/Hero/AppHeroComponent";
+import AppHeroComponent from "./Components/AppHeroComponent";
 import CategoryComponent from "./Components/TileScrollBar/CategoryComponent";
 
 const App = () => {
